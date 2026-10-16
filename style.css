@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, helvetica, sans-serif;
+    color: #111;
+}
+
+.inicio{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:24px;
+}
+
+body{
+    
+    margin:0;
+    background:
+        radial-gradient(
+            elipse at top right
+            #000000,
+            transparent 55%
+        ),
+
+        radial-gradient(
+            elipse at bottom left
+            #00008B,
+            transparent 50%
+        ),
+         #ffffff;
+         
+        color: #17131b;
+}
