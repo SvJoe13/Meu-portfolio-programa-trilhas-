@@ -17,3 +17,23 @@ body {
     text-align:center;
     padding:24px;
 }
+
+body{
+    
+    margin:0;
+    background:
+        radial-gradient(
+            elipse at top right
+            #000000,
+            transparent 55%
+        ),
+
+        radial-gradient(
+            elipse at bottom left
+            #00008B,
+            transparent 50%
+        ),
+         #ffffff;
+         
+        color: #17131b;
+}
