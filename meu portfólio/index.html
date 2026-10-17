@@ -9,11 +9,33 @@
 <body>
     <main>
         <section class="inicio">
-            <h1>Meu portifólio</h1>
+            <div class=" perfil">
+                <img
+                    src="imagens/minha-foto.jpg"
+                    alt="Foto de perfil"
+                    class="foto"
+                 >
+                 
+                 <h1> Seu nome aqui</h1>
 
-            <p>
-                Desenvolvedor front-end no Programa Trilhas 
-            </p>
+                 <p class="subtítulo">
+                    Desenvolvedor front-end no programa trilhas
+                 </p>
+            </div>
+            
+            <nav class="menu" aria-label="Navegação principal">
+                <button type="button" onclick="mostrarPagina('sobre')">
+                    Sobre mim
+                </button>
+
+                <button type="button" onclick="mostrarPagina('Projetos')">
+                    Veja meus projetos
+                </button>
+
+                <button type="button" onclick="mostrarPagina('certificados')">
+                    Veja meus certificados
+                </button>
+            </nav>
         </section>
     </main>
     
