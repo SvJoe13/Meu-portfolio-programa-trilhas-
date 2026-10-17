@@ -18,3 +18,26 @@ body {
     text-align: center;
     padding: 24px;
 }
+body {
+    margin: 0;
+    background:
+        radial-gradient(
+            ellipse at top right,
+            #000000,
+            transparent 55%
+        ),
+        radial-gradient(
+            ellipse at bottom left,
+            #000080,
+            transparent 50%
+        ),
+        #ffffff;
+
+    color: #17131b;
+}
+.inicio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
