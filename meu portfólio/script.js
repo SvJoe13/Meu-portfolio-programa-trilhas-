@@ -12,3 +12,4 @@ function mostrarPagina(id) {
     }
 }
 
+console.log ("JavaScrpit carregado!");
