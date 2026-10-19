@@ -1,0 +1,155 @@
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #17131b;
+
+    background:
+        radial-gradient(
+            ellipse at top right,
+            #000000,
+            transparent 55%
+        ),
+        radial-gradient(
+            ellipse at bottom left,
+            #000080,
+            transparent 50%
+        ),
+        #ffffff;
+}
+
+.inicio {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+     padding: 32px 20px;
+    text-align: center;
+   
+}
+
+.perfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.foto {
+    width: 98x;
+    height: 98px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0 0 8px;
+}
+
+.subtítulo {
+    font-size: 11px;
+    line-height: 1.6;
+    margin:0 0 24px;
+}
+
+.menu {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:8px;
+    width: 100%;
+    max-width: 390px;
+}
+
+.menu button {
+    width: 100%;
+    min-height: 32px;
+    padding: 8px 12px;
+
+    border: 1px solid rgba(90, 80, 90, 0.48);
+    border-radius: 5px;
+
+    background: rgba(235,225,236,0.58);
+    color: #17131b;
+
+    font-family: inherit;
+    font-size: 11px;
+    cursor: pointer;
+    transition: background-collor 0.2s ease;
+}
+
+.menu button :hover {
+    background-color: rgba(255, 255, 255, 0.85);
+}
+
+@media (max-width: 480px){
+    .inicio {
+        padding:24px 16px; 
+}
+
+.menu{
+    max-width: 100%;
+    }
+}
+
+.pagina{
+    display: none;
+}
+
+.pagina.ativa{
+    display:block;
+}
+
+.lista-projetos {
+    width: min(90%, 700px);
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.card-projeto {
+    overflow: hidden;
+    border: 1px solid rgba(225, 225, 225, 0.35);
+    border-radius: 16px;
+    background: rgba(225, 225, 225, 0.12);
+    color: white;
+}
+
+.card-projeto img {
+    display: block;
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.conteudo-card {
+    padding: 16px;
+}
+
+.conteudo-card h3 {
+    margin-top: 0;
+}
+
+.conteudo-card p{
+    line-height: 1.6;
+}
+
+.conteudo-card a{
+    color: white;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    .lista-projetos {
+        grid-template-columns: 1fr;
+    }
+}

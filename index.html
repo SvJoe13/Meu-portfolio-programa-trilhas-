@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio | Programa trilhas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <section class="inicio">
+            <div class=" perfil">
+                <img
+                    src="imagens/foto.jpg"
+                    alt="Foto de perfil"
+                    class="foto"
+                 >
+                 
+                 <h1> Seu nome aqui</h1>
+
+                 <p class="subtítulo">
+                    Desenvolvedor front-end no programa trilhas
+                 </p>
+            </div>
+            
+            <nav class="menu" aria-label="Navegação principal">
+                <button type="button" onclick="mostrarPagina('sobre')">
+                    Sobre mim
+                </button>
+
+                <button type="button" onclick="mostrarPagina('Projetos')">
+                    Veja meus projetos
+                </button>
+
+                <button type="button" onclick="mostrarPagina('certificados')">
+                    Veja meus certificados
+                </button>
+            </nav>
+        </section>
+    </main>
+    <section id = "inicio" class = "pagina ativada">
+
+    </section>
+
+    <section id="sobre" class="pagina">
+
+    </section>
+
+    <section id="projetos" class="pagina">
+        <h2>Meus Projetos</h2>
+
+        <div class="lista-projetos">
+
+            <article class="card-projeto">
+                <img
+                    src="imagens/image.png"
+                    alt="imagem do primeiro projeto"
+                >
+
+            <div class="conteudo-card">
+                <h3>Meu primeiro projeto</h3>
+                <p>
+                    Um projeto em javascript.
+                </p>
+                <a href="#" target="_blank">
+                    Ver projeto 
+                </a>
+                </div>
+                </article>
+
+                <article class="card-projeto">
+                    <img 
+                        src="imagens/projeto2.png"
+                        alt="Imagen do segundo projeto"
+                    >
+
+                    <div class="conteudo-card">
+                        <h3>Meu segundo projeto</h3>
+                        <p>
+                            Um projeto para demonstrar minhas habilidades em desenvolvimento web
+                        </p>
+                        <a href="#" target="_blank">
+                            Ver projeto
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+
+            <button onclick="mostrarPagina('.inicio')">
+                Voltar ao inicio
+            </button>
+    </section>
+
+    <section id="certificados" class="pagina">
+
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
