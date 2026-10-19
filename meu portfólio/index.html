@@ -8,7 +8,7 @@
 </head>
 <body>
     <main>
-        <section class="inicio">
+        <section id="inicio" class="pagina ativa inicio">
             <div class=" perfil">
                 <img
                     src="imagens/foto.jpg"
@@ -28,7 +28,7 @@
                     Sobre mim
                 </button>
 
-                <button type="button" onclick="mostrarPagina('Projetos')">
+                <button type="button" onclick="mostrarPagina('projetos')">
                     Veja meus projetos
                 </button>
 
@@ -38,15 +38,12 @@
             </nav>
         </section>
     </main>
-    <section id = "inicio" class = "pagina ativada">
-
-    </section>
-
+    
     <section id="sobre" class="pagina">
 
     </section>
 
-    <section id="projetos" class="pagina">
+    <section id="Projetos" class="pagina">
         <h2>Meus Projetos</h2>
 
         <div class="lista-projetos">
@@ -87,7 +84,7 @@
 
             </div>
 
-            <button onclick="mostrarPagina('.inicio')">
+            <button type ="button" onclick="mostrarPagina('.inicio')">
                 Voltar ao inicio
             </button>
     </section>
