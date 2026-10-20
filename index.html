@@ -8,8 +8,8 @@
 </head>
 <body>
     <main>
-        <section class="inicio">
-            <div class=" perfil">
+        <section id="inicio" class="pagina ativa inicio">
+            <header class="perfil">
                 <img
                     src="imagens/foto.jpg"
                     alt="Foto de perfil"
@@ -18,17 +18,17 @@
                  
                  <h1> Seu nome aqui</h1>
 
-                 <p class="subtítulo">
+                 <p class="subtitulo">
                     Desenvolvedor front-end no programa trilhas
                  </p>
-            </div>
+            </header>
             
             <nav class="menu" aria-label="Navegação principal">
                 <button type="button" onclick="mostrarPagina('sobre')">
                     Sobre mim
                 </button>
 
-                <button type="button" onclick="mostrarPagina('Projetos')">
+                <button type="button" onclick="mostrarPagina('projetos')">
                     Veja meus projetos
                 </button>
 
@@ -37,65 +37,154 @@
                 </button>
             </nav>
         </section>
-    </main>
-    <section id = "inicio" class = "pagina ativada">
 
-    </section>
+        <section id="sobre" class="pagina sobre">
+            <div class="conteudo-sobre">
 
-    <section id="sobre" class="pagina">
+                <h2>Sobre mim</h2>
 
-    </section>
+                <h3>Olá, seja bem vindo(a) ao meu Portfólio</h3>
 
-    <section id="projetos" class="pagina">
-        <h2>Meus Projetos</h2>
-
-        <div class="lista-projetos">
-
-            <article class="card-projeto">
-                <img
-                    src="imagens/image.png"
-                    alt="imagem do primeiro projeto"
-                >
-
-            <div class="conteudo-card">
-                <h3>Meu primeiro projeto</h3>
                 <p>
-                    Um projeto em javascript.
+                    Meu nome é João Marcos Martins Sá Cunha Paixão, 
+                    sou estudante de Biblioteconomia na UFMA e também estou
+                    desenvolvendo meus conhecimentos em programação
+                    por meio do Programa Trilhas. Tenho interesse em
+                    tecnologia, design e desenvolvimento web, e busco
+                    aprender cada vez mais sobre como criar experiências
+                    digitais funcionais e visualmente agradáveis.
                 </p>
-                <a href="#" target="_blank">
-                    Ver projeto 
-                </a>
-                </div>
-                </article>
 
-                <article class="card-projeto">
-                    <img 
-                        src="imagens/projeto2.png"
-                        alt="Imagen do segundo projeto"
-                    >
+                <p>
+                    Comecei essa jornada com o objetivo de aprender
+                    desenvolvimento front-end e programação, ampliando
+                    minhas possibilidades no mercado de trabalho.
+                    Durante minha jornada no programa,estou desenvolvendo conhecimentos em
+                    Html,Css e JavaScript, buscando melhorar minhas habilidades
+                     e construir projetos cada vez melhores.
+                </p>
 
-                    <div class="conteudo-card">
-                        <h3>Meu segundo projeto</h3>
-                        <p>
-                            Um projeto para demonstrar minhas habilidades em desenvolvimento web
-                        </p>
-                        <a href="#" target="_blank">
-                            Ver projeto
-                        </a>
-                    </div>
-                </article>
+                <h3>Meus objetivos</h3>
 
+                <p>
+                    Meu objetivo profissional é trabalhar como designer
+                    e desenvolvedor front-end, unindo criatividade,
+                    organização visual e programação para desenvolver
+                    interfaces intuitivas, acessíveis e agradáveis.
+                    Quero continuar evoluindo e construir minha carreira
+                    na área de tecnologia.
+                </p>
+
+                <h3>O que estou aprendendo</h3>
+
+                <ul>
+                    <li>Estou aprendendo a programar em html(para a estruturação de páginas web),</li> 
+                    <li>Css (para estilizar e organizar layouts)</li>
+                    <li>JavaScript (para adcionar interatividade)</li>
+                    <li>Git e GitHub — controle de versões e projetos.</li>
+                </ul>
+
+                <button type="button" onclick="mostrarPagina('inicio')">
+                    Voltar ao inicio
+                </button>
             </div>
 
-            <button onclick="mostrarPagina('.inicio')">
-                Voltar ao inicio
-            </button>
     </section>
 
-    <section id="certificados" class="pagina">
+   
+<section id="projetos" class="pagina projetos">
+    <h2>Meus Projetos</h2>
 
-    </section>
+    <div class="lista-projetos">
+
+        <article class="card-projeto">
+            <img src="imagens/image.png" alt="Imagem do primeiro projeto">
+            <div class="conteudo-card">
+                <h3>Meu primeiro projeto</h3>
+                <p>Um projeto em JavaScript.</p>
+                <a href="https://github.com/SvJoe13/Sistema-gerenciador-de-gamers-.git" target="_blank" rel="noopener noreferrer">Ver projeto</a>
+            </div>
+        </article>
+
+        <article class="card-projeto">
+            <img src="imagens/projeto 2.png" alt="Imagem do segundo projeto">
+            <div class="conteudo-card">
+                <h3>Meu segundo projeto</h3>
+                <p>Um projeto para demonstrar minhas habilidades em desenvolvimento web.</p>
+                <a href="https://github.com/SvJoe13/Sistema-gerenciador-de-gamers-.git" target="_blank" rel="noopener noreferrer">Ver projeto</a>
+            </div>
+        </article>
+
+        <article class="card-projeto">
+            <img src="imagens/projeto 3.png" alt="Imagem do terceiro projeto">
+            <div class="conteudo-card">
+                <h3>Meu terceiro projeto</h3>
+                <p>Mais um projeto demonstrando minhas habilidades em programação.</p>
+                <a href="https://github.com/SvJoe13/Sistema-gerenciador-de-gamers-.git" target="_blank" rel="noopener noreferrer">Acessar projeto →</a>
+            </div>
+        </article>
+
+        <article class="card-projeto">
+            <img src="imagens/projeto 4.png" alt="Imagem do quarto projeto">
+            <div class="conteudo-card">
+                <h3>Meu quarto projeto</h3>
+                <p>Quarto projeto de programação.</p>
+                <a href="https://github.com/SvJoe13/Sistema-gerenciador-de-gamers-.git" target="_blank" rel="noopener noreferrer">Acessar projeto →</a>
+            </div>
+        </article>
+
+    </div>
+
+    <footer class="redes-sociais">
+        <a href="https://github.com/SvJoe13"
+           target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/"
+           target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    </footer>
+
+    <button type="button" onclick="mostrarPagina('inicio')">
+        Voltar ao início
+    </button>
+</section>
+
+        
+<section id="certificados" class="pagina certificados">
+
+    <h2>Meus Certificados</h2>
+
+    <p class="introducao-certificados">
+        Aqui compartilho minhas conquistas acadêmicas e formações.
+    </p>
+
+    <div class="lista-certificados">
+
+        <article class="card-certificado">
+            <div class="icone-certificado">🎓</div>
+
+            <h3>Certificado de conclusão do ensino médio</h3>
+
+            <p>Colégio Militar Tiradentes 1</p>
+
+            <p>Ano de conclusão: 2023</p>
+
+            <a href="documentos/certificado.pdf"
+               target="_blank"
+               rel="noopener noreferrer">
+                Visualizar certificado →
+            </a>
+        </article>
+
+    </div>
+
+    <button type="button" onclick="mostrarPagina('inicio')">
+        Voltar ao início
+    </button>
+
+</section>
 
     <script src="script.js"></script>
+    </main>
+    
+    
 </body>
 </html>

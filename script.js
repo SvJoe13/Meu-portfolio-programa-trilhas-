@@ -9,6 +9,9 @@ function mostrarPagina(id) {
 
     if (paginaEscolhida) {
         paginaEscolhida.classList.add("ativa");
+    } else {
+        console.error("Página não encontrada:",id);
     }
 }
 
+console.log ("JavaScrpit carregado!");
