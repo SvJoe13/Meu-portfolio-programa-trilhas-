@@ -9,18 +9,12 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     color: #17131b;
 
-    background:
-        radial-gradient(
-            ellipse at top right,
-            #000000,
-            transparent 55%
-        ),
-        radial-gradient(
-            ellipse at bottom left,
-            #000080,
-            transparent 50%
-        ),
-        #ffffff;
+    background-color: #000000;
+    background-image: url(imagens/matrix-code-animation-gif-free-animated-background.gif);
+     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .pagina {
@@ -166,7 +160,7 @@ body {
 
 .redes-sociais a {
     color: #17131b;
-    font-size: 13px;
+    font-size: 20px;
     font-weight: 600;
     text-decoration: none;
 }
@@ -476,4 +470,24 @@ body {
         font-size: 15px;
         text-align: left;
     }
+}
+
+#projetos > button {
+    transform: translateY(-2px);
+    display: block;
+    margin: 24px auto 0;
+    padding: 12px 22px;
+
+    border: 1px solid #3730a3;
+    border-radius: 8px;
+    background: #3730a3;
+    color: #ffffff;
+
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+
+    transition: background-color 0.2s ease,
+                transform 0.2s ease;
 }
