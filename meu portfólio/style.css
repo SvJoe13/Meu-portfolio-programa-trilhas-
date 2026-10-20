@@ -491,3 +491,36 @@ body {
     transition: background-color 0.2s ease,
                 transform 0.2s ease;
 }
+
+.pagina.ativa.inicio .perfil h1 {
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: 700;
+    text-shadow: 0 2px 8px #000000;
+}
+
+.pagina.ativa.inicio .perfil .subtitulo {
+    color: #ffffff;
+    font-size: 15px;
+    text-shadow: 0 2px 6px #000000;
+}
+
+.pagina.ativa.inicio .menu button {
+    background: rgba(0, 0, 0, 0.88);
+    color: #ffffff;
+    border: 1px solid #86efac;
+    border-radius: 8px;
+    min-height: 44px;
+    padding: 12px 16px;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease,
+                transform 0.2s ease;
+}
+
+.pagina.ativa.inicio .menu button:hover {
+    background: #166534;
+    transform: translateY(-2px);
+}
