@@ -782,3 +782,11 @@ body {
         padding: 22px;
     }
 }
+
+.lista-certificados {
+    display: grid;
+    grid-template-columns: minmax(0, 420px);
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto 30px;
+}
