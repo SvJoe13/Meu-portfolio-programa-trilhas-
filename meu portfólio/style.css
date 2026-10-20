@@ -221,3 +221,72 @@ body {
     }
 }
 
+.pagina.ativa.sobre {
+    display: block;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+.conteudo-sobre {
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 28px;
+    border: 1px solid rgba(90, 80, 100, 0.4);
+    border-radius: 16px;
+    background: rgba(225, 225, 225, 0.48);
+    color: #17131b;
+    box-shadow: 0 4px 14px rgba(30, 20, 50, 0.06);
+}
+
+.conteudo-sobre h2 {
+    margin-top: 0;
+    margin-bottom: 24px;
+    text-align: center;
+    font-size: 28px;
+}
+
+.conteudo-sobre h3 {
+    margin-top: 24px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.conteudo-sobre p, 
+.conteudo-sobre li{
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.conteudo-sobre ul {
+    padding-left: 24px;
+    margin-bottom: 28px;
+}
+
+.conteudo-sobre button {
+    padding: 10px 18px;
+    border: 1px solid rgba(90, 80, 100, 0.48);
+    border-radius: 6px;
+    background: rgba(235, 225, 236, 0.7);
+    color:  #17131b;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.conteudo-sobre button:hover {
+    background: rgba(225, 225, 225, 0.9);
+}
+
+@media (max-width: 520px) {
+    .pagina.ativa.sobre {
+        padding: 24px 16px;
+    }
+
+    .conteudo-sobre {
+        padding: 20px;
+    }
+
+    .conteudo-sobre h2 {
+        font-size: 24px;
+    }
+}
