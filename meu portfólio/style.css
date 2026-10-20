@@ -347,7 +347,7 @@ body {
     background: rgba(255, 255, 255, 0.9);
 }
 
-/* Ajustes para celulares */
+
 @media (max-width: 520px) {
     .pagina.ativa.sobre {
         padding: 24px 16px;
@@ -362,3 +362,118 @@ body {
     }
 }
 
+
+
+
+.pagina.ativa.sobre {
+    display: block;
+    min-height: 100vh;
+    padding: 48px 20px;
+}
+
+.conteudo-sobre {
+    width: 100%;
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 36px 40px;
+    
+    
+    background: rgba(255, 255, 255, 0.78);
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    border-radius: 20px;
+    box-shadow: 0 12px 35px rgba(20, 15, 50, 0.18);
+
+    color: #17131b;
+}
+
+
+.conteudo-sobre h2 {
+    margin: 0 0 30px;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+
+.conteudo-sobre h3 {
+    margin-top: 28px;
+    margin-bottom: 12px;
+    font-size: 19px;
+    color: #3730a3;
+}
+
+.conteudo-sobre h2 + h3 {
+    margin-top: 0;
+}
+
+
+.conteudo-sobre p {
+    margin: 0 0 18px;
+    font-size: 16px;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+
+.conteudo-sobre ul {
+    padding-left: 24px;
+    margin: 12px 0 30px;
+}
+
+.conteudo-sobre li {
+    margin-bottom: 10px;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+
+.conteudo-sobre button {
+    display: block;
+    margin: 24px auto 0;
+    padding: 12px 22px;
+
+    border: 1px solid #3730a3;
+    border-radius: 8px;
+    background: #3730a3;
+    color: #ffffff;
+
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+
+    transition: background-color 0.2s ease,
+                transform 0.2s ease;
+}
+
+.conteudo-sobre button:hover {
+    background: #27216f;
+    transform: translateY(-2px);
+}
+
+
+@media (max-width: 600px) {
+    .pagina.ativa.sobre {
+        padding: 24px 14px;
+    }
+
+    .conteudo-sobre {
+        padding: 24px 20px;
+        border-radius: 14px;
+    }
+
+    .conteudo-sobre h2 {
+        font-size: 26px;
+        margin-bottom: 24px;
+    }
+
+    .conteudo-sobre h3 {
+        font-size: 17px;
+    }
+
+    .conteudo-sobre p {
+        font-size: 15px;
+        text-align: left;
+    }
+}
