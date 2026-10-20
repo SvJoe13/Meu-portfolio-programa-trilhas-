@@ -667,3 +667,118 @@ body {
         padding: 18px;
     }
 }
+
+.pagina.ativa.certificados {
+    display: block;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+#certficados > h2 {
+    margin: 0 0 20px;
+    color: #ffffff;
+    font-size: 30px;
+    text-align: center;
+    text-shadow: 0 2px 8px #000000;
+}
+
+.introducao-certificados {
+    max-width: 680px;
+    margin: 0 auto 32px;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 1.8;
+    text-align: center;
+    text-shadow: 0 2px 6px #000000;
+}
+
+.lista-certificados {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto 30px;
+}
+
+.card-certificado {
+    padding: 28px;
+    background: rgba(5, 10, 7, 0.94);
+    border: 1px solid rgba(134, 239, 172, 0.55);
+    border-radius: 14px;
+    color: #f5f5f5;
+    text-align: center;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+}
+
+.icone-certificado {
+    margin-bottom: 16px;
+    font-size: 42px;
+}
+
+.card-certificado h3 {
+    margin: 0 0 14px;
+    color: #86efac;
+    font-size: 20px;
+}
+
+.card-certificado p {
+    margin: 0 0 20px;
+    color: #f3f4f6;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.status-certificado {
+    display: inline-block;
+    padding: 7px 12px;
+    border: 1px solid rgba(134, 239, 172, 0.5);
+    border-radius: 20px;
+    color: #86efac;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+#certificados > button {
+    display: block;
+    margin: 24px auto 0;
+    padding: 12px 22px;
+    border: 1px solid #86efac;
+    border-radius: 8px;
+    background: #166534;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease,
+                transform 0.2s ease;
+}
+
+#certificados > button:hover {
+    background: #15803d;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 600px) {
+    .pagina.ativa.certificados {
+        padding: 28px 16px;
+    }
+
+    #certificados > h2 {
+        font-size: 25px;
+    }
+
+    .introducao-certificados {
+        font-size: 15px;
+    }
+
+    .lista-certificados {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+    }
+
+    .card-certificado {
+        padding: 22px;
+    }
+}
